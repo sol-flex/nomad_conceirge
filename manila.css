@@ -1,0 +1,66 @@
+/* Reset default styles */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set font and spacing */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Style container for cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Style individual cards */
+.card {
+    flex: 1 1 300px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style card images */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Style card text content */
+.card-text {
+    padding: 20px;
+}
+
+/* Style card headings */
+.card h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style card paragraphs */
+.card p {
+    color: #666;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .card {
+        flex-basis: 100%;
+    }
+}
